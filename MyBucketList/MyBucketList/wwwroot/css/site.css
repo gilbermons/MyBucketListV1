@@ -1,0 +1,277 @@
+html {
+  font-size: 20px;
+  color: black;
+  
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 22px;
+    
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    
+   
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #4db6d4;
+}
+
+.display-1 {
+    /*font-weight: bold;*/
+}
+
+.left-column {
+    float: right;
+    width: 100%;
+    position: relative;
+}
+
+.left-column {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s
+}
+
+  
+
+    .banner {
+        float: left;
+        width: 100%;
+        /*  height: 500px;*/
+        background: #4db6d4;
+        position: relative;
+    }
+
+    .banner .banner-inner {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner h2 {
+        color: white;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    .banner img {
+       /* margin-bottom: 5px;*/
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+
+    }
+
+
+#line {
+    width: auto;
+}
+
+.banner p {
+    font-size: 25px;
+    color: white;
+}
+
+.row {
+    /*background-color: #005b88;*/
+    background-color: #4db6d4;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    background-color: #4db6d4;
+}
+.main {
+    background-color: #4db6d4;
+}
+
+.btn-primary {
+    background-color: black;
+    /*font-weight: bold;*/
+    border-color: black;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: #cd4551;
+}
+
+h1 {
+    color: #9D2235;
+    font-size: 100px;
+    /*font-style: italic;*/
+    /*    font-weight: bolder;*/
+}
+
+h2 {
+    color: #9D2235;
+    /*    font-weight: bolder;*/
+}
+
+.form-group {
+    /*background-color: #FF9999;*/
+}
+
+
+.css-waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+/* Here we declare the SVG node that we wish to animate. */
+
+.animated-waves > use {
+    animation: infinite-waves 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+    .animated-waves > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+
+    .animated-waves > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+
+    .animated-waves > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+
+    .animated-waves > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+
+@keyframes infinite-waves {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .css-waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+.animation1 {
+    position: relative;
+    animation: animation 2s ease-out;
+}
+
+#slide-in {
+    text-align: center;
+    color: #9D2235;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        left: -700px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+
+
+textarea {
+    /*margin-top: 10px;
+    margin-left: 50px;*/
+    width: 500px;
+    height: 100px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);*/
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease 0s;
+    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+}
+
+
+    textarea:focus {
+        background: none repeat scroll 0 0 #FFFFFF;
+        outline-width: 0;
+    }
+
+
+input[type="radio"] {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%), -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius:25px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.8), 0 0 0 1px hsla(0,0%,0%,.6), 0 2px 3px hsla(0,0%,0%,.6), 0 4px 3px hsla(0,0%,0%,.4), 0 6px 6px hsla(0,0%,0%,.2), 0 10px 6px hsla(0,0%,0%,.2);
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+}
+
+    input[type="radio"]:after {
+        background-color: #444;
+        border-radius: 25px;
+        box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4), 0 1px 1px hsla(0,0%,100%,.8);
+        content: '';
+        display: block;
+        height: 7px;
+        left: 4px;
+        position: relative;
+        top: 4px;
+        width: 7px;
+    }
+
+    input[type="radio"]:checked:after {
+        background-color: #f66;
+        box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4), inset 0 2px 2px hsla(0,0%,100%,.4), 0 1px 1px hsla(0,0%,100%,.8), 0 0 2px 2px hsla(0,70%,70%,.4);
+    }
+
+#container-inner-ball {
+    width:80%;
+    height: 80%;
+   /* background: green;*/
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+

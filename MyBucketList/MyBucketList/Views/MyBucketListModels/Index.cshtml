@@ -1,0 +1,108 @@
+﻿@model IEnumerable<MyBucketList.Models.MyBucketListModels>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class ="container-fluid">
+    <h1 id="slide-in" class="animation1">
+                My Bucket List
+    </h1>
+</div>
+
+<p>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <a asp-action="Create">Create New</a>
+       @* <a asp-action="Index" asp-route-bucketType="@Model?.BucketType">Back to List</a>
+*@
+    }
+</p>
+
+<div class = "container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BucketType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IWantIt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToMakeiT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WhatSopped)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IWantWith)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItIsGonnaBe)
+            </th>
+           @* <th>
+                @Html.DisplayNameFor(model => model.CreationEmail)
+            </th>*@
+           @* <th>
+                @Html.DisplayNameFor(model => model.IsCompleted)
+            </th>*@
+            <th></th>
+        </tr>
+         
+    </thead>
+
+
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BucketType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IWantIt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToMakeiT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WhatSopped)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IWantWith)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItIsGonnaBe)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.CreationEmail)
+            </td>*@
+           @* <td>
+                @Html.DisplayFor(modelItem => item.IsCompleted)
+            </td>*@
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                <a asp-action="CreateReview" asp-route-id="@item.Id">Review</a> 
+                
+            </td>
+        </tr>
+}
+    </tbody>
+    </table>
+
+</div>

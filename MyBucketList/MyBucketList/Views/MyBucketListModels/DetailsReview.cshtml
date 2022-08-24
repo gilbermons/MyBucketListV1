@@ -1,0 +1,135 @@
+﻿@model MyBucketList.Models.MyBucketListModels
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class = "container">
+<h2>Details</h2>
+
+<div>
+   @* <h4>MyBucketListModel</h4>*@
+    <hr/>
+
+    <dl class="row">
+        <dt class = "col-sm-1">
+            @Html.DisplayNameFor(model => model.BucketType)
+        </dt>
+        <dd class = "col-sm-11">
+           @* @Html.DisplayFor(model => model.BucketType)*@
+           @ViewBag.BucketTypeName
+        </dd>
+        <dt class = "col-sm-1">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-11">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-1">
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+        <dd class = "col-sm-1">
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+        <dt class = "col-sm-1">
+            @Html.DisplayNameFor(model => model.IWantIt)
+        </dt>
+        <dd class = "col-sm-9">
+            @Html.DisplayFor(model => model.IWantIt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ToMakeiT)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.ToMakeiT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatSopped)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.WhatSopped)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IWantWith)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.IWantWith)
+        </dd>
+        <dt class = "col-sm-1">
+            @Html.DisplayNameFor(model => model.ItIsGonnaBe)
+        </dt>
+        <dd class = "col-sm-5">
+            @Html.DisplayFor(model => model.ItIsGonnaBe)
+        </dd>
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreationEmail)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.CreationEmail)
+        </dd>*@
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsCompleted)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsCompleted)
+        </dd>*@
+    </dl>
+</div>
+
+
+<dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhenAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhenAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhereAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WhereAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WithAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WithAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HowAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HowAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IlearnedAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IlearnedAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ItMadeMeFeelAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ItMadeMeFeelAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WouldIDoItAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WouldIDoItAfter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TheBestPartAfter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TheBestPartAfter)
+        </dd>
+    </dl>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+
+    @*<a asp-action="Index" asp-route-bucketType="@Model?.BucketType">Back to List</a>*@
+</div>
+
+</div>

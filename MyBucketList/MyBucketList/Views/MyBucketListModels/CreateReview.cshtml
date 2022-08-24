@@ -1,0 +1,168 @@
+﻿@model MyBucketList.Models.MyBucketListModels 
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class = "container">
+@*<h3>After</h3>*@
+
+@*<h4>BucketReview</h4>*@
+<hr />
+<div class ="container">
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BucketType)
+        </dt>
+        <dd class = "col-sm-10">
+           @*@Html.DisplayFor(model => model.BucketType)*@
+           @ViewBag.BucketTypeName
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IWantIt)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.IWantIt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ToMakeiT)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.ToMakeiT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WhatSopped)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.WhatSopped)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IWantWith)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.IWantWith)
+        </dd>
+        <dt class = "col-sm-1">
+            @Html.DisplayNameFor(model => model.ItIsGonnaBe)
+        </dt>
+        <dd class = "col-sm-5">
+            @Html.DisplayFor(model => model.ItIsGonnaBe)
+        </dd>
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreationEmail)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.CreationEmail)
+        </dd>*@
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsCompleted)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsCompleted)
+        </dd>*@
+    </dl>
+        
+
+
+          <div class= "row">
+            <div class="col-lg-6">
+                <form asp-action="CreateReview">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="BucketType" />
+                    <input type="hidden" asp-for="Title" />
+                    <input type="hidden" asp-for="CreationEmail" />
+                    <input type="hidden" asp-for="CreationDate"/>
+                    <input type="hidden" asp-for="IWantIt" />
+                    <input type="hidden" asp-for="ToMakeiT"/>
+                    <input type="hidden" asp-for="WhatSopped"/>
+                    <input type="hidden" asp-for="IWantWith"/>
+                    <input type="hidden" asp-for="ItIsGonnaBe"/>
+                    <input type="hidden" asp-for="IsCompleted"/>
+
+
+                    <div class="form-group">
+                    <label asp-for="WhenAfter" class="control-label"></label>
+                    <textarea asp-for="WhenAfter" class="form-control"></textarea>
+                    <span asp-validation-for="WhenAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="WhereAfter" class="control-label"></label>
+                    <textarea asp-for="WhereAfter" class="form-control"></textarea>
+                    <span asp-validation-for="WhereAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="WithAfter" class="control-label"></label>
+                    <textarea asp-for="WithAfter" class="form-control"></textarea>
+                    <span asp-validation-for="WithAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="HowAfter" class="control-label"></label>
+                    <textarea asp-for="HowAfter" class="form-control"></textarea>
+                    <span asp-validation-for="HowAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="IlearnedAfter" class="control-label"></label>
+                    <textarea asp-for="IlearnedAfter" class="form-control"></textarea>
+                    <span asp-validation-for="IlearnedAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="ItMadeMeFeelAfter" class="control-label"></label>
+                    <textarea asp-for="ItMadeMeFeelAfter" class="form-control"></textarea>
+                    <span asp-validation-for="ItMadeMeFeelAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="TheBestPartAfter" class="control-label"></label>
+                    <textarea asp-for="TheBestPartAfter" class="form-control"></textarea>
+                    <span asp-validation-for="TheBestPartAfter" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="WouldIDoItAfter" class="control-label"></label> <br>
+
+                        <input  type = "radio" asp-for="WouldIDoItAfter" value = "ohyeah"/> Oh Yeah!<br>
+                        <input  type = "radio" asp-for="WouldIDoItAfter" value = "maybe "/> maybe <br>
+                        <input  type = "radio" asp-for="WouldIDoItAfter" value = "YesWithS"/> yes, with someone else <br>
+                        <input  type = "radio" asp-for="WouldIDoItAfter" value = "beenThere"/>  been there, done that <br>
+                        <input  type = "radio" asp-for="WouldIDoItAfter" value = "notInaM"/>not in a million years! <br>
+                    <span asp-validation-for="WouldIDoItAfter" class="text-danger"></span>
+                    </div>  
+                                  
+ 
+
+                    <div class="form-group">
+                        <input type="submit" value="Completed" class="btn btn-primary" />
+                    </div>
+
+                </form>
+            </div>
+            </div>
+    
+
+    </div>
+
+    <div>
+        <a asp-action="Index" asp-route-bucketType="@Model?.BucketType">Back to List</a>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

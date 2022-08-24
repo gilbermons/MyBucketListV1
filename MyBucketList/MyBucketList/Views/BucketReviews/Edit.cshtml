@@ -1,0 +1,69 @@
+﻿@model MyBucketList.Data.BucketReview
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>BucketReview</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="When" class="control-label"></label>
+                <input asp-for="When" class="form-control" />
+                <span asp-validation-for="When" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Where" class="control-label"></label>
+                <input asp-for="Where" class="form-control" />
+                <span asp-validation-for="Where" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="With" class="control-label"></label>
+                <input asp-for="With" class="form-control" />
+                <span asp-validation-for="With" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="How" class="control-label"></label>
+                <input asp-for="How" class="form-control" />
+                <span asp-validation-for="How" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ilearned" class="control-label"></label>
+                <input asp-for="Ilearned" class="form-control" />
+                <span asp-validation-for="Ilearned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ItMadeMeFeel" class="control-label"></label>
+                <input asp-for="ItMadeMeFeel" class="form-control" />
+                <span asp-validation-for="ItMadeMeFeel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WouldIDoIt" class="control-label"></label>
+                <input asp-for="WouldIDoIt" class="form-control" />
+                <span asp-validation-for="WouldIDoIt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TheBestPart" class="control-label"></label>
+                <input asp-for="TheBestPart" class="form-control" />
+                <span asp-validation-for="TheBestPart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

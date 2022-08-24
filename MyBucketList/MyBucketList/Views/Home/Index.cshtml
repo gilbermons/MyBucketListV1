@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class ="container-fluid">
+    <h1 id="slide-in" class="animation1">
+                My Bucket List
+    </h1>
+</div>
+
+<div class=  "container">
+    <br>
+    <br>
+</div>
+
+
+ <div class = "container">
+
+   
+
+    <div class = "row">
+    
+ 
+    
+                     <div class="col-lg-3">
+                           <div class = "banner">
+                                <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "1"})"> Creativity</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "2"})"> Food + Drinks</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "3"})"> Love</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "4"})"> Adventure</a>
+                                </div>
+                            </div>
+                      </div>
+                  
+    </div>
+
+</div>
+
+
+
+ <div class = "container">
+
+
+    <div class = "row">
+    
+    
+    
+                     <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "5"})"> Body + Health</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                   <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "6"})">Family + Friends</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "7"})"> Self-Improvment</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                  <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "8"})"> Career</a>
+                                </div>
+                            </div>
+                      </div>
+                  
+    </div>
+
+</div>
+
+  <div class = "container">
+
+
+    <div class = "row">
+    
+    
+    
+                     <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                     <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "9"})"> Travel</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "10"})"> Financial </a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                   <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "11"})"> Top Secret</a>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-lg-3">
+                           <div class = "banner">
+                               <img  src="~/css/images/bucketsImages/bucketModelimg.png"/>
+                                <div class ="banner-inner">
+                                    <a href ="@Url.Action("Index", "MyBucketListModels", new { bucketType = "12"})"> Other</a>
+                                </div>
+                            </div>
+                      </div>
+                  
+    </div>
+
+</div>
+
+<div class = "container-fluid">
+
+    
+    <svg
+    class="css-waves"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28"
+    preserveAspectRatio="none"
+    shape-rendering="auto"
+  >
+    <defs>
+      <path
+        id="wave-pattern"
+        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+      ></path>
+    </defs>
+ 
+    <g class="animated-waves">
+      <use href="#wave-pattern" x="48" y="0" fill="rgba(155,255,255,0.7"></use>
+      <use href="#wave-pattern" x="48" y="3" fill="rgba(155,255,255,0.5)"></use>
+      <use href="#wave-pattern" x="48" y="5" fill="rgba(155,255,255,0.3)"></use>
+      <use href="#wave-pattern" x="48" y="7" fill="rgba(155,255,255,0.3)"></use>
+    </g>
+  </svg>
+</div>

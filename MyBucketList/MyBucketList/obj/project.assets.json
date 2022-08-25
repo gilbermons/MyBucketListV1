@@ -1934,7 +1934,7 @@
           }
         }
       },
-      "NuGet.Frameworks/6.2.1": {
+      "NuGet.Frameworks/6.3.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
@@ -6378,22 +6378,20 @@
         "nuget.dependencyresolver.core.nuspec"
       ]
     },
-    "NuGet.Frameworks/6.2.1": {
-      "sha512": "J5AlfS/XIhPIODuAgdh+/anL08M5aZG/wW5TXsNQW5MfRhgVHkCiN/9/MHAzA1BXccchlTjL/uVRL7DVH56LRw==",
+    "NuGet.Frameworks/6.3.0": {
+      "sha512": "JW/WMvvRatkZDQiK/E43P+xuaoYH7slTS36noFcubBGk2NL9rAKU+tWeudBAuzOjYRp1FJdzjo9b86/dZO56iw==",
       "type": "package",
-      "path": "nuget.frameworks/6.2.1",
+      "path": "nuget.frameworks/6.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "icon.png",
-        "lib/net40/NuGet.Frameworks.dll",
-        "lib/net40/NuGet.Frameworks.xml",
         "lib/net472/NuGet.Frameworks.dll",
         "lib/net472/NuGet.Frameworks.xml",
         "lib/netstandard2.0/NuGet.Frameworks.dll",
         "lib/netstandard2.0/NuGet.Frameworks.xml",
-        "nuget.frameworks.6.2.1.nupkg.sha512",
+        "nuget.frameworks.6.3.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
       ]
     },
@@ -10530,6 +10528,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.8",
+      "NuGet.Frameworks >= 6.3.0",
       "Swashbuckle.AspNetCore >= 6.3.0"
     ]
   },
@@ -10597,6 +10596,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.8, )"
+          },
+          "NuGet.Frameworks": {
+            "target": "Package",
+            "version": "[6.3.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "NuGet.Frameworks": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.0, )"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XRhUt3UKSiDfhq4LWkoHmDTk14ygLV42jZcNKuq9Xf05avi59Gz6iNuvukGobD3FjNHlaPUUSuHvOBuCcknicw==",
+  "dgSpecHash": "3ThhzPAp6n8tMVLpv/qHDzb6j0+FJ1DZZ38ScFvvTERc0if9eZEZdsadV93G84FdGGQZht+jnd4R8jpbf7nZxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\gilbe\\OneDrive\\Documentos\\GitHub\\MyBucketListV4\\MyBucketListV1\\MyBucketList\\MyBucketList\\MyBucketList.csproj",
   "expectedPackageFiles": [
@@ -85,7 +85,7 @@
     "C:\\Users\\gilbe\\.nuget\\packages\\nuget.common\\6.2.1\\nuget.common.6.2.1.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\nuget.configuration\\6.2.1\\nuget.configuration.6.2.1.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\nuget.dependencyresolver.core\\5.11.0\\nuget.dependencyresolver.core.5.11.0.nupkg.sha512",
-    "C:\\Users\\gilbe\\.nuget\\packages\\nuget.frameworks\\6.2.1\\nuget.frameworks.6.2.1.nupkg.sha512",
+    "C:\\Users\\gilbe\\.nuget\\packages\\nuget.frameworks\\6.3.0\\nuget.frameworks.6.3.0.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\nuget.librarymodel\\5.11.0\\nuget.librarymodel.5.11.0.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\nuget.packaging\\6.2.1\\nuget.packaging.6.2.1.nupkg.sha512",
     "C:\\Users\\gilbe\\.nuget\\packages\\nuget.projectmodel\\5.11.0\\nuget.projectmodel.5.11.0.nupkg.sha512",

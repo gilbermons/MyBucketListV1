@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="MyBucketListV2" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\gilbe\\OneDrive\\Documentos\\GitHub\\my\ bucket\ list\ back\ up\\MyBucketList\\MyBucketList\\MyBucketList\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="MyBucketListV1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\gilbe\\OneDrive\\Documentos\\GitHub\\MyBucketListV4\\MyBucketListV1\\MyBucketList\\MyBucketList\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

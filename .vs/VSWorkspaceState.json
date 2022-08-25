@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\MyBucketList",
     "\\MyBucketList\\MyBucketList",
-    "\\MyBucketList\\MyBucketList\\Controllers"
+    "\\MyBucketList\\MyBucketList\\Controllers",
+    "\\MyBucketList\\MyBucketList\\Views",
+    "\\MyBucketList\\MyBucketList\\Views\\MyBucketListModels"
   ],
-  "SelectedNode": "\\MyBucketList",
+  "SelectedNode": "\\MyBucketList\\MyBucketList\\Controllers\\MyBucketListModelsController.cs",
   "PreviewInSolutionExplorer": false
 }

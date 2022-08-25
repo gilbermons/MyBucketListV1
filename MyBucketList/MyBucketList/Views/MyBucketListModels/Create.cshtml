@@ -5,16 +5,19 @@
 }
 
 
-<div class = "container">
-        <h3>Create a Bucket List-Testing deployment</h3>
-        <h3>Create a Buckett</h3>
-        <h3>Create a Buckett</h3>
-            <h3>Create a Buckett</h3>
-        <h3>Create a Buckett</h3>
-        
-@*<h4>MyBucketListModel</h4>*@
-@*<hr/>*@
-    <div class = "container">
+<div class="container">
+    <h3>Create a Bucket List-Testing deployment</h3>
+    <h3>Create a Buckett</h3>
+    <h3>Create a Buckett</h3>
+    <h3>Create a Buckett</h3>
+    <h3>Create a Buckett</h3>
+    <h3>Create a Buckett</h3>
+    <h3>Create a Buckett</h3>
+    <h3>Create a Buckett</h3>
+
+    @*<h4>MyBucketListModel</h4>*@
+    @*<hr/>*@
+    <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <form asp-action="Create">
@@ -23,71 +26,71 @@
 
 
                     <div class="form-group">
-                    <label asp-for="BucketType" class="control-label"></label>
-                    @Html.DropDownListFor(m => m.BucketType,(ViewBag.BucketsSelectList as SelectList), "Select Bucket Type")
-                    <span asp-validation-for="BucketType" class="text-danger"></span>
-                     </div>
-   
-   
-                    <div class="form-group">
-                    <label asp-for="Title" class="control-label"></label>
-                    <textarea asp-for="Title" class="form-control"></textarea>
-                    @*<input asp-for="Title" class="form-control" />*@
-                    <span asp-validation-for="Title" class="text-danger"></span>
-                    </div>
-              
-                    <div class="form-group">
-                    <label asp-for="IWantIt" class="control-label"></label>
-                    <textarea  rows = "4" asp-for="IWantIt" class="form-control"></textarea>
-                    <span asp-validation-for="IWantIt" class="text-danger"></span>
+                        <label asp-for="BucketType" class="control-label"></label>
+                        @Html.DropDownListFor(m => m.BucketType,(ViewBag.BucketsSelectList as SelectList), "Select Bucket Type")
+                        <span asp-validation-for="BucketType" class="text-danger"></span>
                     </div>
 
-            
-          
+
                     <div class="form-group">
-                    <label asp-for="ToMakeiT" class="control-label"></label>
-                    <textarea rows = "4" asp-for="ToMakeiT" class="form-control"></textarea>
-                    <span asp-validation-for="ToMakeiT" class="text-danger"></span>
+                        <label asp-for="Title" class="control-label"></label>
+                        <textarea asp-for="Title" class="form-control"></textarea>
+                        @*<input asp-for="Title" class="form-control" />*@
+                        <span asp-validation-for="Title" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
-                    <label asp-for="WhatSopped" class="control-label"></label>
-                    <textarea rows = "4" asp-for="WhatSopped" class="form-control"></textarea>
-                    <span asp-validation-for="WhatSopped" class="text-danger"></span>
+                        <label asp-for="IWantIt" class="control-label"></label>
+                        <textarea rows="4" asp-for="IWantIt" class="form-control"></textarea>
+                        <span asp-validation-for="IWantIt" class="text-danger"></span>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label asp-for="ToMakeiT" class="control-label"></label>
+                        <textarea rows="4" asp-for="ToMakeiT" class="form-control"></textarea>
+                        <span asp-validation-for="ToMakeiT" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
-                    <label asp-for="IWantWith" class="control-label"></label>
-                    <textarea rows = "4" asp-for="IWantWith" class="form-control"></textarea>
-                    <span asp-validation-for="IWantWith" class="text-danger"></span>
+                        <label asp-for="WhatSopped" class="control-label"></label>
+                        <textarea rows="4" asp-for="WhatSopped" class="form-control"></textarea>
+                        <span asp-validation-for="WhatSopped" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="IWantWith" class="control-label"></label>
+                        <textarea rows="4" asp-for="IWantWith" class="form-control"></textarea>
+                        <span asp-validation-for="IWantWith" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
                         <label asp-for="ItIsGonnaBe" class="control-label"> </label> <br>
-                
 
-                        <input  type = "radio" asp-for="ItIsGonnaBe" value = "challenging"/> challenging <br>
-                        <input  type = "radio" asp-for="ItIsGonnaBe" value = "scary"/> scary <br>
-                        <input  type = "radio" asp-for="ItIsGonnaBe" value = "fun"/> fun <br>
-                        <input  type = "radio" asp-for="ItIsGonnaBe" value = "difficult"/> difficult <br>
-                        <input  type = "radio" asp-for="ItIsGonnaBe" value = "expensive"/> expensive <br>
+
+                        <input type="radio" asp-for="ItIsGonnaBe" value="challenging" /> challenging <br>
+                        <input type="radio" asp-for="ItIsGonnaBe" value="scary" /> scary <br>
+                        <input type="radio" asp-for="ItIsGonnaBe" value="fun" /> fun <br>
+                        <input type="radio" asp-for="ItIsGonnaBe" value="difficult" /> difficult <br>
+                        <input type="radio" asp-for="ItIsGonnaBe" value="expensive" /> expensive <br>
                         <span asp-validation-for="ItIsGonnaBe" class="text-danger"></span> <br>
-                    </div>       
+                    </div>
                     <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
+                        <input type="submit" value="Create" class="btn btn-primary" />
                     </div>
                 </form>
             </div>
 
         </div>
-  
+
         <div class="col-lg-6">
-            <div id ="container-inner-ball"> </div>
-                  
+            <div id="container-inner-ball"> </div>
+
         </div>
-          
-        </div>
+
     </div>
+</div>
    
 </div>
     @*<a asp-action="Index" asp-route-bucketType="@Model?.BucketType">Back to List</a>*@
